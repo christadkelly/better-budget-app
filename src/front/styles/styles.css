@@ -1,22 +1,65 @@
-
-.homeComponentBorder{
-    border: 1px solid black;
-    border-radius: 17px;
-    background-color: #709176;
+.icon-lnk {
+    color:#111;
 }
 
-.homeusertag{
-    font-weight: 500;
-    color: black;
-    letter-spacing: 1px;
-
-}
-
-.userhomebtn {
+.expense-btn {
   align-items: center;
   background-color: #f2d0dd;
   border: 2px solid #111;
-  border-radius: 8px;
+  border-radius: 1px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: auto;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.expense-btn:after {
+  background-color: #111;
+  border-radius: 1px;
+  content: "";
+  display: block;
+  height: 28px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.expense-btn:hover:after {
+  transform: translate(0, 0);
+}
+
+.expense-btn:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.expense-btn:hover {
+  outline: 0;
+  background-color: #111;
+}
+
+.sort-btn {
+  align-items: center;
+  background-color: #f2d0dd;
+  border: 2px solid #111;
+  border-radius: 1px;
   box-sizing: border-box;
   color: #111;
   cursor: pointer;
@@ -36,9 +79,9 @@
   touch-action: manipulation;
 }
 
-.userhomebtn:after {
+.sort-btn:after {
   background-color: #111;
-  border-radius: 8px;
+  border-radius: 1px;
   content: "";
   display: block;
   height: 48px;
@@ -51,79 +94,22 @@
   z-index: -1;
 }
 
-.userhomebtn:hover:after {
+.sort-btn:hover:after {
   transform: translate(0, 0);
 }
 
-.userhomebtn:active {
-  background-color: #f2d0dd;
+.sort-btn:active {
+  background-color: #ffdeda;
   outline: 0;
 }
 
-.userhomebtn:hover {
+.sort-btn:hover {
   outline: 0;
-}
-
-@media (min-width: 768px) {
-  .userhomebtn {
-    padding: 0 40px;
-  }
-}
-
-.button-56 {
-  align-items: center;
-  background-color: #f2d0dd;
-  border: 2px solid #111;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #111;
-  cursor: pointer;
-  display: flex;
-  font-family: Inter,sans-serif;
-  font-size: 16px;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 0 25px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-56:after {
   background-color: #111;
-  border-radius: 8px;
-  content: "";
-  display: block;
-  height: 48px;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform .2s ease-out;
-  z-index: -1;
-}
-
-.button-56:hover:after {
-  transform: translate(0, 0);
-}
-
-.button-56:active {
-  background-color: #f2d0dd;
-  outline: 0;
-}
-
-.button-56:hover {
-  outline: 0;
 }
 
 @media (min-width: 768px) {
-  .button-56 {
+  .expense-btn {
     padding: 0 40px;
   }
 }

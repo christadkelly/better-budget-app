@@ -1,0 +1,19 @@
+.splash-banner{
+    background-color: #fff;
+    border-radius: 1px;
+    box-shadow: 10px 10px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.feature{
+    box-shadow: 10px 10px;  
+}

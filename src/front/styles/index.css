@@ -1,3 +1,4 @@
-/* 
-    General Styles used on every website (Don't Repeat Yourself)
-*/
+body {
+    background-color: #f2d0dd;
+    height: 100vh;
+  }
